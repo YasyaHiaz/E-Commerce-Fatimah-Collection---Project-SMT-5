@@ -1,0 +1,10 @@
+/* layout.css - containers, grid helpers */
+.site-wrap{min-height:100vh;display:flex;flex-direction:column}
+main{flex:1 0 auto;padding:24px 0}
+.footer{padding:24px 0;background:#fafafa;border-top:1px solid #f0f0f0;margin-top:32px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
+.card{background:var(--card);border-radius:var(--radius);padding:12px;box-shadow:0 6px 18px rgba(12,15,20,0.04)}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.col-2{flex:1 1 50%}
+.col-3{flex:1 1 33%}
+.text-muted{color:var(--muted)}

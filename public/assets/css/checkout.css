@@ -1,0 +1,5 @@
+/* checkout.css */
+.checkout-form{display:grid;grid-template-columns:1fr 360px;gap:24px}
+.checkout-form .field{margin-bottom:12px}
+.checkout-form input, .checkout-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #eee}
+.order-summary{background:#fff;padding:12px;border-radius:8px;border:1px solid #f0f0f0}

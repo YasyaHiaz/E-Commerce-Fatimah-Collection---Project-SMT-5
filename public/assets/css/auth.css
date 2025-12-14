@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f8f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Wrapper */
+.auth-wrapper {
+  width: 100%;
+  max-width: 960px;
+  padding: 20px;
+}
+
+/* Card */
+.auth-card {
+  display: flex;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* Left */
+.auth-left {
+  flex: 1;
+  background: linear-gradient(135deg, #f7dce6, #ffd6ef);
+  padding: 50px;
+  color: #4a3c46;
+}
+
+.auth-left h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.auth-left p {
+  font-size: 15px;
+  opacity: .9;
+  margin-bottom: 25px;
+}
+
+.auth-left span {
+  font-weight: 600;
+}
+
+.switch-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #333;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.switch-btn:hover {
+  background: #f4f4f4;
+}
+
+/* Right */
+.auth-right {
+  flex: 1;
+  padding: 50px;
+}
+
+.auth-right h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #3d2f38;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1.6px solid #d9c5cf;
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #b75d8b;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 6px;
+  font-size: 14px;
+  color: #9c8a95;
+  transition: 0.2s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -6px;
+  font-size: 12px;
+  color: #b75d8b;
+}
+
+/* Button */
+.auth-btn {
+  width: 100%;
+  background: #b75d8b;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.auth-btn:hover {
+  background: #9e4b77;
+}
+
+/* Social */
+.social-area {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-login button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid #d7c3cc;
+  background: white;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.social-login button:hover {
+  background: #f3eef0;
+}

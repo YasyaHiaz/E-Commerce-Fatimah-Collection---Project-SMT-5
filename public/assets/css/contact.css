@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --pink-bg: #fff0f5;
+    --pink-soft: #ffd6e5;
+    --brown: #6d4c41;
+    --brown-dark: #5d4037;
+    --white: #ffffff;
+    --text-dark: #333;
+}
+
+/* GLOBAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, var(--pink-bg), var(--pink-soft));
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+}
+
+/* TITLES */
+.section-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--brown);
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* CONTAINERS */
+.contact-card,
+.contact-info-box,
+.contact-form {
+    background: var(--white);
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.07);
+    padding: 28px;
+    transition: .3s ease;
+}
+
+/* ANIMATION */
+.fade-up { animation: fadeUp .7s ease forwards; }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-card:hover,
+.contact-info-box:hover,
+.contact-form:hover {
+    transform: translateY(-5px);
+}
+
+/* INPUTS */
+.input-soft {
+    border-radius: 14px !important;
+    border: 1px solid #e0e0e0 !important;
+    padding: 13px 16px !important;
+    font-size: 15px;
+    transition: .25s ease;
+}
+
+.input-soft:focus {
+    border-color: var(--brown) !important;
+    box-shadow: 0 0 0 3px rgba(109,76,65,0.15);
+    background: #fff;
+}
+
+/* BUTTON */
+.contact-btn {
+    padding: 14px 0;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--brown);
+    color: #fff;
+    border: none;
+    width: 100%;
+    transition: .3s ease;
+    box-shadow: 0 10px 30px rgba(109,76,65,0.25);
+}
+
+.contact-btn:hover {
+    background: var(--brown-dark);
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* INFO TITLE */
+.info-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--brown);
+}

@@ -1,0 +1,135 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --pink-bg: #fff0f5;
+    --pink-soft: #ffd6e5;
+    --brown: #6d4c41;
+    --brown-dark: #5d4037;
+    --text-dark: #333;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, var(--pink-bg), var(--pink-soft));
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN CONTAINER */
+.product-detail-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+}
+
+/* IMAGE */
+.image-section img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* INFO */
+.info-section h1 {
+    font-size: 32px;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+.stock {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-cart, .btn-buy {
+    border: none;
+    border-radius: 50px;
+    padding: 14px 36px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* BASE BUTTON STYLE (biar ukuran sama) */
+.btn-cart,
+.btn-buy {
+    min-width: 200px;      /* lebar seragam */
+    height: 50px;          /* tinggi seragam */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 0 30px;       /* padding horizontal */
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Cart button */
+.btn-cart {
+    background: transparent;
+    color: var(--brown);
+    border: 2px solid var(--brown);
+}
+
+/* Buy button */
+.btn-buy {
+    background: var(--brown);
+    color: var(--white);
+    border: 2px solid var(--brown);
+    box-shadow: 0 10px 30px rgba(109, 76, 65, 0.3);
+}
+
+/* Hover effect sama */
+.btn-cart:hover,
+.btn-buy:hover {
+    transform: translateY(-2px);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .product-detail-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .info-section h1 {
+        font-size: 26px;
+    }
+}

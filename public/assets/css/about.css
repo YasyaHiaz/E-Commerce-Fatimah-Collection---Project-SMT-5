@@ -1,0 +1,128 @@
+/* ===========================
+   BASE STYLE (FOLLOW PRODUCT DETAIL THEME)
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --pink-bg: #fff0f5;
+    --pink-soft: #ffd6e5;
+    --brown: #6d4c41;
+    --brown-dark: #5d4037;
+    --white: #ffffff;
+    --text-dark: #333;
+}
+
+body.bg-body {
+    background: linear-gradient(180deg, var(--pink-bg), var(--pink-soft));
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.section-hero {
+    padding: 80px 0;
+    background: transparent;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--brown);
+}
+
+.subtitle {
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ===========================
+   CONTENT SECTION
+=========================== */
+
+.section-content {
+    padding: 60px 0;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* IMAGE */
+.image-rounded {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* CARD STYLE LIKE PRODUCT DETAIL */
+.shadow {
+    background: var(--white);
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.07);
+}
+
+/* TEXT HEADINGS */
+.heading {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--brown);
+}
+
+.mt {
+    margin-top: 30px;
+}
+
+.text {
+    color: #555;
+    line-height: 1.8;
+}
+
+.list {
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+/* ===========================
+   REUSABLE UTILITIES
+=========================== */
+
+.rounded {
+    border-radius: 16px;
+}
+
+.shadow-lg {
+    background: var(--white);
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    padding: 25px;
+}

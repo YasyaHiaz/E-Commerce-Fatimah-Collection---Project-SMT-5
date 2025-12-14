@@ -1,0 +1,6 @@
+/* product-card.css */
+.product-card .thumb{height:220px;overflow:hidden;border-radius:8px}
+.product-card h3{font-size:16px;margin:8px 0 6px 0}
+.product-card .price{color:var(--accent);font-weight:700}
+.product-card .card-actions{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:8px}
+.product-card .badge{background:#ffece6;color:var(--primary);padding:4px 8px;border-radius:999px;font-weight:600;font-size:12px}
