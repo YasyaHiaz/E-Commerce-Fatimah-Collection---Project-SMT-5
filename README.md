@@ -4,6 +4,7 @@
 Fatimah Collection adalah aplikasi e-commerce berbasis **PHP Native & MySQL** yang dirancang untuk mendukung penjualan produk fashion muslim secara online. Sistem ini mencakup pengelolaan produk, transaksi pelanggan, wishlist, keranjang belanja, blog, serta manajemen akun pengguna dengan antarmuka modern dan responsif.
 
 ---
+File PPT ERP - Rekayasa E-Busineess_Fatimah Collection_
 
 ## 📌 Fitur Utama
 
